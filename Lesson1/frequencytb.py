@@ -9,9 +9,12 @@ def frequency_table(numbers):
     table = Counter(numbers)
     number_freq = table.most_common()
     number_freq.sort()
-    print('Number\tFrequency')
+    print('-----------------')
+    print('Number||Frequency')
+    print('-----------------')
     for number in number_freq:
-        print('{0}\t\t{1}'.format(number[0],number[1]))
+        print('{0}\t|\t{1}'.format(number[0],number[1]))
+    print('-----------------')
 
 
 if __name__ == '__main__':
